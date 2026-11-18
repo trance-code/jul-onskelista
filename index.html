@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Min Julönskelista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="glow glow-3"></div>
+
+  <canvas id="snow"></canvas>
+
+  <main class="page">
+    <header>
+      <div class="badge">🎄 Jul 2026 · Önskelista</div>
+      <h1>Min Julönskelista</h1>
+      <p class="subtitle">Klicka på en önskan för att markera den som önskad ✨</p>
+    </header>
+
+    <div class="controls">
+      <button class="btn active" data-filter="all">Alla önskningar</button>
+      <button class="btn" data-filter="game">Spel</button>
+      <button class="btn" data-filter="perfume">Parfym</button>
+      <button class="btn" data-filter="skincare">Skincare</button>
+      <button class="btn" data-filter="other">Annat</button>
+      <button class="btn" id="resetBtn">Nollställ</button>
+    </div>
+
+    <section class="grid" id="wishlist"></section>
+
+    <footer>
+      ❄️ God jul! - 2026 ❄️
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
